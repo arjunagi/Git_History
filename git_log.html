@@ -1,0 +1,964 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module git_log</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>git_log</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/Karthik/Documents/Internships&Jobs/Tesla/git_history/git_log.py">/Users/Karthik/Documents/Internships&Jobs/Tesla/git_history/git_log.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="PyQt4.QtCore.html">PyQt4.QtCore</a><br>
+<a href="PyQt4.QtGui.html">PyQt4.QtGui</a><br>
+</td><td width="25%" valign=top><a href="git_log_ui.html">git_log_ui</a><br>
+<a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="subprocess.html">subprocess</a><br>
+<a href="sys.html">sys</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="PyQt4.QtGui.html#QMainWindow">PyQt4.QtGui.QMainWindow</a>(<a href="PyQt4.QtGui.html#QWidget">PyQt4.QtGui.QWidget</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="git_log.html#GitLog">GitLog</a>(<a href="PyQt4.QtGui.html#QMainWindow">PyQt4.QtGui.QMainWindow</a>, <a href="git_log_ui.html#Ui_MainWindow">git_log_ui.Ui_MainWindow</a>)
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="git_log_ui.html#Ui_MainWindow">git_log_ui.Ui_MainWindow</a>(<a href="__builtin__.html#object">__builtin__.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="git_log.html#GitLog">GitLog</a>(<a href="PyQt4.QtGui.html#QMainWindow">PyQt4.QtGui.QMainWindow</a>, <a href="git_log_ui.html#Ui_MainWindow">git_log_ui.Ui_MainWindow</a>)
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="GitLog">class <strong>GitLog</strong></a>(<a href="PyQt4.QtGui.html#QMainWindow">PyQt4.QtGui.QMainWindow</a>, <a href="git_log_ui.html#Ui_MainWindow">git_log_ui.Ui_MainWindow</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Class&nbsp;<a href="#GitLog">GitLog</a>&nbsp;inherits&nbsp;the&nbsp;QtGui.<a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>&nbsp;and&nbsp;git_log_ui.<a href="git_log_ui.html#Ui_MainWindow">Ui_MainWindow</a>&nbsp;classes.<br>
+It&nbsp;uses&nbsp;them&nbsp;to&nbsp;provide&nbsp;the&nbsp;UI&nbsp;for&nbsp;this&nbsp;application.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="git_log.html#GitLog">GitLog</a></dd>
+<dd><a href="PyQt4.QtGui.html#QMainWindow">PyQt4.QtGui.QMainWindow</a></dd>
+<dd><a href="PyQt4.QtGui.html#QWidget">PyQt4.QtGui.QWidget</a></dd>
+<dd><a href="PyQt4.QtCore.html#QObject">PyQt4.QtCore.QObject</a></dd>
+<dd><a href="sip.html#wrapper">sip.wrapper</a></dd>
+<dd><a href="PyQt4.QtGui.html#QPaintDevice">PyQt4.QtGui.QPaintDevice</a></dd>
+<dd><a href="sip.html#simplewrapper">sip.simplewrapper</a></dd>
+<dd><a href="git_log_ui.html#Ui_MainWindow">git_log_ui.Ui_MainWindow</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="GitLog-__init__"><strong>__init__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="GitLog-close_application"><strong>close_application</strong></a>(self)</dt><dd><tt>Function&nbsp;to&nbsp;close&nbsp;the&nbsp;application</tt></dd></dl>
+
+<dl><dt><a name="GitLog-create_comment_tree"><strong>create_comment_tree</strong></a>(self)</dt><dd><tt>Function&nbsp;to&nbsp;add&nbsp;the&nbsp;logs&nbsp;in&nbsp;the&nbsp;tree&nbsp;widget&nbsp;using&nbsp;comments&nbsp;as&nbsp;each&nbsp;item&nbsp;in&nbsp;the&nbsp;tree.</tt></dd></dl>
+
+<dl><dt><a name="GitLog-display_path"><strong>display_path</strong></a>(self, path)</dt><dd><tt>Function&nbsp;to&nbsp;display&nbsp;the&nbsp;path&nbsp;of&nbsp;file/directory&nbsp;in&nbsp;the&nbsp;text&nbsp;box.<br>
+&nbsp;<br>
+Parameters:<br>
+-----------<br>
+path:&nbsp;String.&nbsp;The&nbsp;path&nbsp;to&nbsp;be&nbsp;displayed&nbsp;in&nbsp;the&nbsp;text&nbsp;box</tt></dd></dl>
+
+<dl><dt><a name="GitLog-get_directory_path"><strong>get_directory_path</strong></a>(self)</dt><dd><tt>Function&nbsp;to&nbsp;get&nbsp;the&nbsp;full&nbsp;path&nbsp;of&nbsp;the&nbsp;selected&nbsp;directory.</tt></dd></dl>
+
+<dl><dt><a name="GitLog-get_file_path"><strong>get_file_path</strong></a>(self)</dt><dd><tt>Function&nbsp;to&nbsp;get&nbsp;the&nbsp;full&nbsp;path&nbsp;of&nbsp;the&nbsp;selected&nbsp;file.</tt></dd></dl>
+
+<dl><dt><a name="GitLog-get_git_log_using_revisions"><strong>get_git_log_using_revisions</strong></a>(self, revs)</dt><dd><tt>Function&nbsp;to&nbsp;get&nbsp;the&nbsp;output&nbsp;of&nbsp;the&nbsp;'git&nbsp;log'&nbsp;command&nbsp;for&nbsp;the&nbsp;given&nbsp;SHA&nbsp;revisions.<br>
+&nbsp;<br>
+Parameters:<br>
+-----------<br>
+revs:&nbsp;String.&nbsp;The&nbsp;revision(s)&nbsp;entered&nbsp;in&nbsp;the&nbsp;text&nbsp;box</tt></dd></dl>
+
+<dl><dt><a name="GitLog-get_git_log_using_timeline"><strong>get_git_log_using_timeline</strong></a>(self, time)</dt><dd><tt>Function&nbsp;to&nbsp;get&nbsp;the&nbsp;output&nbsp;of&nbsp;the&nbsp;'git&nbsp;log'&nbsp;command&nbsp;for&nbsp;the&nbsp;selected&nbsp;file/directory<br>
+over&nbsp;the&nbsp;selected&nbsp;time&nbsp;duration.<br>
+&nbsp;<br>
+Parameters:<br>
+-----------<br>
+time:&nbsp;String.&nbsp;The&nbsp;time&nbsp;duration&nbsp;selected&nbsp;from&nbsp;the&nbsp;time&nbsp;line&nbsp;combo&nbsp;box.</tt></dd></dl>
+
+<dl><dt><a name="GitLog-reset_all_fields"><strong>reset_all_fields</strong></a>(self)</dt><dd><tt>Function&nbsp;to&nbsp;reset&nbsp;all&nbsp;the&nbsp;fields&nbsp;in&nbsp;the&nbsp;application&nbsp;UI</tt></dd></dl>
+
+<dl><dt><a name="GitLog-select_file_or_directory"><strong>select_file_or_directory</strong></a>(self, fileOrDir)</dt><dd><tt>Function&nbsp;to&nbsp;check&nbsp;what&nbsp;option&nbsp;was&nbsp;selected&nbsp;(File/Directory)&nbsp;and&nbsp;call&nbsp;the&nbsp;appropriate<br>
+function&nbsp;to&nbsp;get&nbsp;the&nbsp;file/directory&nbsp;path.<br>
+&nbsp;<br>
+Parameters:<br>
+-----------<br>
+fileOrDir:&nbsp;String.&nbsp;Will&nbsp;have&nbsp;the&nbsp;value&nbsp;selected&nbsp;in&nbsp;the&nbsp;"Select&nbsp;File/Directory"&nbsp;combo&nbsp;box</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="PyQt4.QtGui.html#QMainWindow">PyQt4.QtGui.QMainWindow</a>:<br>
+<dl><dt><a name="GitLog-addDockWidget"><strong>addDockWidget</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-addDockWidget">addDockWidget</a>(Qt.DockWidgetArea,&nbsp;QDockWidget)<br>
+<a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-addDockWidget">addDockWidget</a>(Qt.DockWidgetArea,&nbsp;QDockWidget,&nbsp;Qt.Orientation)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-addToolBar"><strong>addToolBar</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-addToolBar">addToolBar</a>(Qt.ToolBarArea,&nbsp;QToolBar)<br>
+<a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-addToolBar">addToolBar</a>(QToolBar)<br>
+<a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-addToolBar">addToolBar</a>(QString)&nbsp;-&gt;&nbsp;QToolBar</tt></dd></dl>
+
+<dl><dt><a name="GitLog-addToolBarBreak"><strong>addToolBarBreak</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-addToolBarBreak">addToolBarBreak</a>(Qt.ToolBarArea&nbsp;area=Qt.TopToolBarArea)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-centralWidget"><strong>centralWidget</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-centralWidget">centralWidget</a>()&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="GitLog-contextMenuEvent"><strong>contextMenuEvent</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-contextMenuEvent">contextMenuEvent</a>(QContextMenuEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-corner"><strong>corner</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-corner">corner</a>(Qt.Corner)&nbsp;-&gt;&nbsp;Qt.DockWidgetArea</tt></dd></dl>
+
+<dl><dt><a name="GitLog-createPopupMenu"><strong>createPopupMenu</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-createPopupMenu">createPopupMenu</a>()&nbsp;-&gt;&nbsp;QMenu</tt></dd></dl>
+
+<dl><dt><a name="GitLog-dockOptions"><strong>dockOptions</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-dockOptions">dockOptions</a>()&nbsp;-&gt;&nbsp;<a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.DockOptions</tt></dd></dl>
+
+<dl><dt><a name="GitLog-dockWidgetArea"><strong>dockWidgetArea</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-dockWidgetArea">dockWidgetArea</a>(QDockWidget)&nbsp;-&gt;&nbsp;Qt.DockWidgetArea</tt></dd></dl>
+
+<dl><dt><a name="GitLog-documentMode"><strong>documentMode</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-documentMode">documentMode</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-event"><strong>event</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-event">event</a>(QEvent)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-iconSize"><strong>iconSize</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-iconSize">iconSize</a>()&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<strong>iconSizeChanged</strong> = &lt;unbound signal iconSizeChanged&gt;
+<dl><dt><a name="GitLog-insertToolBar"><strong>insertToolBar</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-insertToolBar">insertToolBar</a>(QToolBar,&nbsp;QToolBar)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-insertToolBarBreak"><strong>insertToolBarBreak</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-insertToolBarBreak">insertToolBarBreak</a>(QToolBar)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-isAnimated"><strong>isAnimated</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-isAnimated">isAnimated</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-isDockNestingEnabled"><strong>isDockNestingEnabled</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-isDockNestingEnabled">isDockNestingEnabled</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-isSeparator"><strong>isSeparator</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-isSeparator">isSeparator</a>(QPoint)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-menuBar"><strong>menuBar</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-menuBar">menuBar</a>()&nbsp;-&gt;&nbsp;QMenuBar</tt></dd></dl>
+
+<dl><dt><a name="GitLog-menuWidget"><strong>menuWidget</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-menuWidget">menuWidget</a>()&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="GitLog-removeDockWidget"><strong>removeDockWidget</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-removeDockWidget">removeDockWidget</a>(QDockWidget)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-removeToolBar"><strong>removeToolBar</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-removeToolBar">removeToolBar</a>(QToolBar)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-removeToolBarBreak"><strong>removeToolBarBreak</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-removeToolBarBreak">removeToolBarBreak</a>(QToolBar)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-restoreDockWidget"><strong>restoreDockWidget</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-restoreDockWidget">restoreDockWidget</a>(QDockWidget)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-restoreState"><strong>restoreState</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-restoreState">restoreState</a>(QByteArray,&nbsp;int&nbsp;version=0)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-saveState"><strong>saveState</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-saveState">saveState</a>(int&nbsp;version=0)&nbsp;-&gt;&nbsp;QByteArray</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setAnimated"><strong>setAnimated</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-setAnimated">setAnimated</a>(bool)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setCentralWidget"><strong>setCentralWidget</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-setCentralWidget">setCentralWidget</a>(QWidget)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setCorner"><strong>setCorner</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-setCorner">setCorner</a>(Qt.Corner,&nbsp;Qt.DockWidgetArea)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setDockNestingEnabled"><strong>setDockNestingEnabled</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-setDockNestingEnabled">setDockNestingEnabled</a>(bool)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setDockOptions"><strong>setDockOptions</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-setDockOptions">setDockOptions</a>(<a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.DockOptions)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setDocumentMode"><strong>setDocumentMode</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-setDocumentMode">setDocumentMode</a>(bool)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setIconSize"><strong>setIconSize</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-setIconSize">setIconSize</a>(QSize)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setMenuBar"><strong>setMenuBar</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-setMenuBar">setMenuBar</a>(QMenuBar)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setMenuWidget"><strong>setMenuWidget</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-setMenuWidget">setMenuWidget</a>(QWidget)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setStatusBar"><strong>setStatusBar</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-setStatusBar">setStatusBar</a>(QStatusBar)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setTabPosition"><strong>setTabPosition</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-setTabPosition">setTabPosition</a>(Qt.DockWidgetAreas,&nbsp;QTabWidget.TabPosition)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setTabShape"><strong>setTabShape</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-setTabShape">setTabShape</a>(QTabWidget.TabShape)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setToolButtonStyle"><strong>setToolButtonStyle</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-setToolButtonStyle">setToolButtonStyle</a>(Qt.ToolButtonStyle)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setUnifiedTitleAndToolBarOnMac"><strong>setUnifiedTitleAndToolBarOnMac</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-setUnifiedTitleAndToolBarOnMac">setUnifiedTitleAndToolBarOnMac</a>(bool)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-splitDockWidget"><strong>splitDockWidget</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-splitDockWidget">splitDockWidget</a>(QDockWidget,&nbsp;QDockWidget,&nbsp;Qt.Orientation)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-statusBar"><strong>statusBar</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-statusBar">statusBar</a>()&nbsp;-&gt;&nbsp;QStatusBar</tt></dd></dl>
+
+<dl><dt><a name="GitLog-tabPosition"><strong>tabPosition</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-tabPosition">tabPosition</a>(Qt.DockWidgetArea)&nbsp;-&gt;&nbsp;QTabWidget.TabPosition</tt></dd></dl>
+
+<dl><dt><a name="GitLog-tabShape"><strong>tabShape</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-tabShape">tabShape</a>()&nbsp;-&gt;&nbsp;QTabWidget.TabShape</tt></dd></dl>
+
+<dl><dt><a name="GitLog-tabifiedDockWidgets"><strong>tabifiedDockWidgets</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-tabifiedDockWidgets">tabifiedDockWidgets</a>(QDockWidget)&nbsp;-&gt;&nbsp;list-of-QDockWidget</tt></dd></dl>
+
+<dl><dt><a name="GitLog-tabifyDockWidget"><strong>tabifyDockWidget</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-tabifyDockWidget">tabifyDockWidget</a>(QDockWidget,&nbsp;QDockWidget)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-toolBarArea"><strong>toolBarArea</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-toolBarArea">toolBarArea</a>(QToolBar)&nbsp;-&gt;&nbsp;Qt.ToolBarArea</tt></dd></dl>
+
+<dl><dt><a name="GitLog-toolBarBreak"><strong>toolBarBreak</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-toolBarBreak">toolBarBreak</a>(QToolBar)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-toolButtonStyle"><strong>toolButtonStyle</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-toolButtonStyle">toolButtonStyle</a>()&nbsp;-&gt;&nbsp;Qt.ToolButtonStyle</tt></dd></dl>
+
+<strong>toolButtonStyleChanged</strong> = &lt;unbound signal toolButtonStyleChanged&gt;
+<dl><dt><a name="GitLog-unifiedTitleAndToolBarOnMac"><strong>unifiedTitleAndToolBarOnMac</strong></a>(...)</dt><dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-unifiedTitleAndToolBarOnMac">unifiedTitleAndToolBarOnMac</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="PyQt4.QtGui.html#QMainWindow">PyQt4.QtGui.QMainWindow</a>:<br>
+<dl><dt><strong>AllowNestedDocks</strong> = 2</dl>
+
+<dl><dt><strong>AllowTabbedDocks</strong> = 4</dl>
+
+<dl><dt><strong>AnimatedDocks</strong> = 1</dl>
+
+<dl><dt><strong>DockOption</strong> = &lt;class 'PyQt4.QtGui.DockOption'&gt;</dl>
+
+<dl><dt><strong>DockOptions</strong> = &lt;class 'PyQt4.QtGui.DockOptions'&gt;<dd><tt><a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-DockOptions">DockOptions</a>(<a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.DockOptions)<br>
+<a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-DockOptions">DockOptions</a>(int)<br>
+<a href="PyQt4.QtGui.html#QMainWindow">QMainWindow</a>.<a href="#GitLog-DockOptions">DockOptions</a>()</tt></dl>
+
+<dl><dt><strong>ForceTabbedDocks</strong> = 8</dl>
+
+<dl><dt><strong>VerticalTabs</strong> = 16</dl>
+
+<hr>
+Methods inherited from <a href="PyQt4.QtGui.html#QWidget">PyQt4.QtGui.QWidget</a>:<br>
+<dl><dt><a name="GitLog-acceptDrops"><strong>acceptDrops</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-acceptDrops">acceptDrops</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-accessibleDescription"><strong>accessibleDescription</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-accessibleDescription">accessibleDescription</a>()&nbsp;-&gt;&nbsp;QString</tt></dd></dl>
+
+<dl><dt><a name="GitLog-accessibleName"><strong>accessibleName</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-accessibleName">accessibleName</a>()&nbsp;-&gt;&nbsp;QString</tt></dd></dl>
+
+<dl><dt><a name="GitLog-actionEvent"><strong>actionEvent</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-actionEvent">actionEvent</a>(QActionEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-actions"><strong>actions</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-actions">actions</a>()&nbsp;-&gt;&nbsp;list-of-QAction</tt></dd></dl>
+
+<dl><dt><a name="GitLog-activateWindow"><strong>activateWindow</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-activateWindow">activateWindow</a>()</tt></dd></dl>
+
+<dl><dt><a name="GitLog-addAction"><strong>addAction</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-addAction">addAction</a>(QAction)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-addActions"><strong>addActions</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-addActions">addActions</a>(list-of-QAction)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-adjustSize"><strong>adjustSize</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-adjustSize">adjustSize</a>()</tt></dd></dl>
+
+<dl><dt><a name="GitLog-autoFillBackground"><strong>autoFillBackground</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-autoFillBackground">autoFillBackground</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-backgroundRole"><strong>backgroundRole</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-backgroundRole">backgroundRole</a>()&nbsp;-&gt;&nbsp;QPalette.ColorRole</tt></dd></dl>
+
+<dl><dt><a name="GitLog-baseSize"><strong>baseSize</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-baseSize">baseSize</a>()&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="GitLog-changeEvent"><strong>changeEvent</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-changeEvent">changeEvent</a>(QEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-childAt"><strong>childAt</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-childAt">childAt</a>(QPoint)&nbsp;-&gt;&nbsp;QWidget<br>
+QWidget.<a href="#GitLog-childAt">childAt</a>(int,&nbsp;int)&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="GitLog-childrenRect"><strong>childrenRect</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-childrenRect">childrenRect</a>()&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="GitLog-childrenRegion"><strong>childrenRegion</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-childrenRegion">childrenRegion</a>()&nbsp;-&gt;&nbsp;QRegion</tt></dd></dl>
+
+<dl><dt><a name="GitLog-clearFocus"><strong>clearFocus</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-clearFocus">clearFocus</a>()</tt></dd></dl>
+
+<dl><dt><a name="GitLog-clearMask"><strong>clearMask</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-clearMask">clearMask</a>()</tt></dd></dl>
+
+<dl><dt><a name="GitLog-close"><strong>close</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-close">close</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-closeEvent"><strong>closeEvent</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-closeEvent">closeEvent</a>(QCloseEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-contentsMargins"><strong>contentsMargins</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-contentsMargins">contentsMargins</a>()&nbsp;-&gt;&nbsp;QMargins</tt></dd></dl>
+
+<dl><dt><a name="GitLog-contentsRect"><strong>contentsRect</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-contentsRect">contentsRect</a>()&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="GitLog-contextMenuPolicy"><strong>contextMenuPolicy</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-contextMenuPolicy">contextMenuPolicy</a>()&nbsp;-&gt;&nbsp;Qt.ContextMenuPolicy</tt></dd></dl>
+
+<dl><dt><a name="GitLog-create"><strong>create</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-create">create</a>(int&nbsp;window=0,&nbsp;bool&nbsp;initializeWindow=True,&nbsp;bool&nbsp;destroyOldWindow=True)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-cursor"><strong>cursor</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-cursor">cursor</a>()&nbsp;-&gt;&nbsp;QCursor</tt></dd></dl>
+
+<strong>customContextMenuRequested</strong> = &lt;unbound signal customContextMenuRequested&gt;
+<dl><dt><a name="GitLog-destroy"><strong>destroy</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-destroy">destroy</a>(bool&nbsp;destroyWindow=True,&nbsp;bool&nbsp;destroySubWindows=True)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-devType"><strong>devType</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-devType">devType</a>()&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="GitLog-dragEnterEvent"><strong>dragEnterEvent</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-dragEnterEvent">dragEnterEvent</a>(QDragEnterEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-dragLeaveEvent"><strong>dragLeaveEvent</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-dragLeaveEvent">dragLeaveEvent</a>(QDragLeaveEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-dragMoveEvent"><strong>dragMoveEvent</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-dragMoveEvent">dragMoveEvent</a>(QDragMoveEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-dropEvent"><strong>dropEvent</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-dropEvent">dropEvent</a>(QDropEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-effectiveWinId"><strong>effectiveWinId</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-effectiveWinId">effectiveWinId</a>()&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="GitLog-enabledChange"><strong>enabledChange</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-enabledChange">enabledChange</a>(bool)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-ensurePolished"><strong>ensurePolished</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-ensurePolished">ensurePolished</a>()</tt></dd></dl>
+
+<dl><dt><a name="GitLog-enterEvent"><strong>enterEvent</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-enterEvent">enterEvent</a>(QEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-find"><strong>find</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-find">find</a>(int)&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="GitLog-focusInEvent"><strong>focusInEvent</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-focusInEvent">focusInEvent</a>(QFocusEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-focusNextChild"><strong>focusNextChild</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-focusNextChild">focusNextChild</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-focusNextPrevChild"><strong>focusNextPrevChild</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-focusNextPrevChild">focusNextPrevChild</a>(bool)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-focusOutEvent"><strong>focusOutEvent</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-focusOutEvent">focusOutEvent</a>(QFocusEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-focusPolicy"><strong>focusPolicy</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-focusPolicy">focusPolicy</a>()&nbsp;-&gt;&nbsp;Qt.FocusPolicy</tt></dd></dl>
+
+<dl><dt><a name="GitLog-focusPreviousChild"><strong>focusPreviousChild</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-focusPreviousChild">focusPreviousChild</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-focusProxy"><strong>focusProxy</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-focusProxy">focusProxy</a>()&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="GitLog-focusWidget"><strong>focusWidget</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-focusWidget">focusWidget</a>()&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="GitLog-font"><strong>font</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-font">font</a>()&nbsp;-&gt;&nbsp;QFont</tt></dd></dl>
+
+<dl><dt><a name="GitLog-fontChange"><strong>fontChange</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-fontChange">fontChange</a>(QFont)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-fontInfo"><strong>fontInfo</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-fontInfo">fontInfo</a>()&nbsp;-&gt;&nbsp;QFontInfo</tt></dd></dl>
+
+<dl><dt><a name="GitLog-fontMetrics"><strong>fontMetrics</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-fontMetrics">fontMetrics</a>()&nbsp;-&gt;&nbsp;QFontMetrics</tt></dd></dl>
+
+<dl><dt><a name="GitLog-foregroundRole"><strong>foregroundRole</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-foregroundRole">foregroundRole</a>()&nbsp;-&gt;&nbsp;QPalette.ColorRole</tt></dd></dl>
+
+<dl><dt><a name="GitLog-frameGeometry"><strong>frameGeometry</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-frameGeometry">frameGeometry</a>()&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="GitLog-frameSize"><strong>frameSize</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-frameSize">frameSize</a>()&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="GitLog-geometry"><strong>geometry</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-geometry">geometry</a>()&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="GitLog-getContentsMargins"><strong>getContentsMargins</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-getContentsMargins">getContentsMargins</a>()&nbsp;-&gt;&nbsp;(int,&nbsp;int,&nbsp;int,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-grabGesture"><strong>grabGesture</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-grabGesture">grabGesture</a>(Qt.GestureType,&nbsp;Qt.GestureFlags&nbsp;flags=Qt.GestureFlags(0))</tt></dd></dl>
+
+<dl><dt><a name="GitLog-grabKeyboard"><strong>grabKeyboard</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-grabKeyboard">grabKeyboard</a>()</tt></dd></dl>
+
+<dl><dt><a name="GitLog-grabMouse"><strong>grabMouse</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-grabMouse">grabMouse</a>()<br>
+QWidget.<a href="#GitLog-grabMouse">grabMouse</a>(QCursor)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-grabShortcut"><strong>grabShortcut</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-grabShortcut">grabShortcut</a>(QKeySequence,&nbsp;Qt.ShortcutContext&nbsp;context=Qt.WindowShortcut)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="GitLog-graphicsEffect"><strong>graphicsEffect</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-graphicsEffect">graphicsEffect</a>()&nbsp;-&gt;&nbsp;QGraphicsEffect</tt></dd></dl>
+
+<dl><dt><a name="GitLog-graphicsProxyWidget"><strong>graphicsProxyWidget</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-graphicsProxyWidget">graphicsProxyWidget</a>()&nbsp;-&gt;&nbsp;QGraphicsProxyWidget</tt></dd></dl>
+
+<dl><dt><a name="GitLog-handle"><strong>handle</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-handle">handle</a>()&nbsp;-&gt;&nbsp;sip.voidptr</tt></dd></dl>
+
+<dl><dt><a name="GitLog-hasFocus"><strong>hasFocus</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-hasFocus">hasFocus</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-hasMouseTracking"><strong>hasMouseTracking</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-hasMouseTracking">hasMouseTracking</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-height"><strong>height</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-height">height</a>()&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="GitLog-heightForWidth"><strong>heightForWidth</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-heightForWidth">heightForWidth</a>(int)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="GitLog-hide"><strong>hide</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-hide">hide</a>()</tt></dd></dl>
+
+<dl><dt><a name="GitLog-hideEvent"><strong>hideEvent</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-hideEvent">hideEvent</a>(QHideEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-inputContext"><strong>inputContext</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-inputContext">inputContext</a>()&nbsp;-&gt;&nbsp;QInputContext</tt></dd></dl>
+
+<dl><dt><a name="GitLog-inputMethodEvent"><strong>inputMethodEvent</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-inputMethodEvent">inputMethodEvent</a>(QInputMethodEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-inputMethodHints"><strong>inputMethodHints</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-inputMethodHints">inputMethodHints</a>()&nbsp;-&gt;&nbsp;Qt.InputMethodHints</tt></dd></dl>
+
+<dl><dt><a name="GitLog-inputMethodQuery"><strong>inputMethodQuery</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-inputMethodQuery">inputMethodQuery</a>(Qt.InputMethodQuery)&nbsp;-&gt;&nbsp;QVariant</tt></dd></dl>
+
+<dl><dt><a name="GitLog-insertAction"><strong>insertAction</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-insertAction">insertAction</a>(QAction,&nbsp;QAction)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-insertActions"><strong>insertActions</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-insertActions">insertActions</a>(QAction,&nbsp;list-of-QAction)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-isActiveWindow"><strong>isActiveWindow</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-isActiveWindow">isActiveWindow</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-isAncestorOf"><strong>isAncestorOf</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-isAncestorOf">isAncestorOf</a>(QWidget)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-isEnabled"><strong>isEnabled</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-isEnabled">isEnabled</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-isEnabledTo"><strong>isEnabledTo</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-isEnabledTo">isEnabledTo</a>(QWidget)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-isEnabledToTLW"><strong>isEnabledToTLW</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-isEnabledToTLW">isEnabledToTLW</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-isFullScreen"><strong>isFullScreen</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-isFullScreen">isFullScreen</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-isHidden"><strong>isHidden</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-isHidden">isHidden</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-isLeftToRight"><strong>isLeftToRight</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-isLeftToRight">isLeftToRight</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-isMaximized"><strong>isMaximized</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-isMaximized">isMaximized</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-isMinimized"><strong>isMinimized</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-isMinimized">isMinimized</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-isModal"><strong>isModal</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-isModal">isModal</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-isRightToLeft"><strong>isRightToLeft</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-isRightToLeft">isRightToLeft</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-isTopLevel"><strong>isTopLevel</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-isTopLevel">isTopLevel</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-isVisible"><strong>isVisible</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-isVisible">isVisible</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-isVisibleTo"><strong>isVisibleTo</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-isVisibleTo">isVisibleTo</a>(QWidget)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-isWindow"><strong>isWindow</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-isWindow">isWindow</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-isWindowModified"><strong>isWindowModified</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-isWindowModified">isWindowModified</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-keyPressEvent"><strong>keyPressEvent</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-keyPressEvent">keyPressEvent</a>(QKeyEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-keyReleaseEvent"><strong>keyReleaseEvent</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-keyReleaseEvent">keyReleaseEvent</a>(QKeyEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-keyboardGrabber"><strong>keyboardGrabber</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-keyboardGrabber">keyboardGrabber</a>()&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="GitLog-languageChange"><strong>languageChange</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-languageChange">languageChange</a>()</tt></dd></dl>
+
+<dl><dt><a name="GitLog-layout"><strong>layout</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-layout">layout</a>()&nbsp;-&gt;&nbsp;QLayout</tt></dd></dl>
+
+<dl><dt><a name="GitLog-layoutDirection"><strong>layoutDirection</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-layoutDirection">layoutDirection</a>()&nbsp;-&gt;&nbsp;Qt.LayoutDirection</tt></dd></dl>
+
+<dl><dt><a name="GitLog-leaveEvent"><strong>leaveEvent</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-leaveEvent">leaveEvent</a>(QEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-locale"><strong>locale</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-locale">locale</a>()&nbsp;-&gt;&nbsp;QLocale</tt></dd></dl>
+
+<dl><dt><a name="GitLog-lower"><strong>lower</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-lower">lower</a>()</tt></dd></dl>
+
+<dl><dt><a name="GitLog-mapFrom"><strong>mapFrom</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-mapFrom">mapFrom</a>(QWidget,&nbsp;QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="GitLog-mapFromGlobal"><strong>mapFromGlobal</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-mapFromGlobal">mapFromGlobal</a>(QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="GitLog-mapFromParent"><strong>mapFromParent</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-mapFromParent">mapFromParent</a>(QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="GitLog-mapTo"><strong>mapTo</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-mapTo">mapTo</a>(QWidget,&nbsp;QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="GitLog-mapToGlobal"><strong>mapToGlobal</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-mapToGlobal">mapToGlobal</a>(QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="GitLog-mapToParent"><strong>mapToParent</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-mapToParent">mapToParent</a>(QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="GitLog-mask"><strong>mask</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-mask">mask</a>()&nbsp;-&gt;&nbsp;QRegion</tt></dd></dl>
+
+<dl><dt><a name="GitLog-maximumHeight"><strong>maximumHeight</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-maximumHeight">maximumHeight</a>()&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="GitLog-maximumSize"><strong>maximumSize</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-maximumSize">maximumSize</a>()&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="GitLog-maximumWidth"><strong>maximumWidth</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-maximumWidth">maximumWidth</a>()&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="GitLog-metric"><strong>metric</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-metric">metric</a>(QPaintDevice.PaintDeviceMetric)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="GitLog-minimumHeight"><strong>minimumHeight</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-minimumHeight">minimumHeight</a>()&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="GitLog-minimumSize"><strong>minimumSize</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-minimumSize">minimumSize</a>()&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="GitLog-minimumSizeHint"><strong>minimumSizeHint</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-minimumSizeHint">minimumSizeHint</a>()&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="GitLog-minimumWidth"><strong>minimumWidth</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-minimumWidth">minimumWidth</a>()&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="GitLog-mouseDoubleClickEvent"><strong>mouseDoubleClickEvent</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-mouseDoubleClickEvent">mouseDoubleClickEvent</a>(QMouseEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-mouseGrabber"><strong>mouseGrabber</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-mouseGrabber">mouseGrabber</a>()&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="GitLog-mouseMoveEvent"><strong>mouseMoveEvent</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-mouseMoveEvent">mouseMoveEvent</a>(QMouseEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-mousePressEvent"><strong>mousePressEvent</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-mousePressEvent">mousePressEvent</a>(QMouseEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-mouseReleaseEvent"><strong>mouseReleaseEvent</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-mouseReleaseEvent">mouseReleaseEvent</a>(QMouseEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-move"><strong>move</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-move">move</a>(QPoint)<br>
+QWidget.<a href="#GitLog-move">move</a>(int,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-moveEvent"><strong>moveEvent</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-moveEvent">moveEvent</a>(QMoveEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-nativeParentWidget"><strong>nativeParentWidget</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-nativeParentWidget">nativeParentWidget</a>()&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="GitLog-nextInFocusChain"><strong>nextInFocusChain</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-nextInFocusChain">nextInFocusChain</a>()&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="GitLog-normalGeometry"><strong>normalGeometry</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-normalGeometry">normalGeometry</a>()&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="GitLog-overrideWindowFlags"><strong>overrideWindowFlags</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-overrideWindowFlags">overrideWindowFlags</a>(Qt.WindowFlags)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-overrideWindowState"><strong>overrideWindowState</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-overrideWindowState">overrideWindowState</a>(Qt.WindowStates)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-paintEngine"><strong>paintEngine</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-paintEngine">paintEngine</a>()&nbsp;-&gt;&nbsp;QPaintEngine</tt></dd></dl>
+
+<dl><dt><a name="GitLog-paintEvent"><strong>paintEvent</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-paintEvent">paintEvent</a>(QPaintEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-palette"><strong>palette</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-palette">palette</a>()&nbsp;-&gt;&nbsp;QPalette</tt></dd></dl>
+
+<dl><dt><a name="GitLog-paletteChange"><strong>paletteChange</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-paletteChange">paletteChange</a>(QPalette)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-parentWidget"><strong>parentWidget</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-parentWidget">parentWidget</a>()&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="GitLog-pos"><strong>pos</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-pos">pos</a>()&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="GitLog-previousInFocusChain"><strong>previousInFocusChain</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-previousInFocusChain">previousInFocusChain</a>()&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="GitLog-raise_"><strong>raise_</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-raise_">raise_</a>()</tt></dd></dl>
+
+<dl><dt><a name="GitLog-rect"><strong>rect</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-rect">rect</a>()&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="GitLog-releaseKeyboard"><strong>releaseKeyboard</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-releaseKeyboard">releaseKeyboard</a>()</tt></dd></dl>
+
+<dl><dt><a name="GitLog-releaseMouse"><strong>releaseMouse</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-releaseMouse">releaseMouse</a>()</tt></dd></dl>
+
+<dl><dt><a name="GitLog-releaseShortcut"><strong>releaseShortcut</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-releaseShortcut">releaseShortcut</a>(int)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-removeAction"><strong>removeAction</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-removeAction">removeAction</a>(QAction)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-render"><strong>render</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-render">render</a>(QPaintDevice,&nbsp;QPoint&nbsp;targetOffset=QPoint(),&nbsp;QRegion&nbsp;sourceRegion=QRegion(),&nbsp;QWidget.RenderFlags&nbsp;flags=QWidget.DrawWindowBackground|QWidget.DrawChildren)<br>
+QWidget.<a href="#GitLog-render">render</a>(QPainter,&nbsp;QPoint&nbsp;targetOffset=QPoint(),&nbsp;QRegion&nbsp;sourceRegion=QRegion(),&nbsp;QWidget.RenderFlags&nbsp;flags=QWidget.DrawWindowBackground|QWidget.DrawChildren)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-repaint"><strong>repaint</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-repaint">repaint</a>()<br>
+QWidget.<a href="#GitLog-repaint">repaint</a>(int,&nbsp;int,&nbsp;int,&nbsp;int)<br>
+QWidget.<a href="#GitLog-repaint">repaint</a>(QRect)<br>
+QWidget.<a href="#GitLog-repaint">repaint</a>(QRegion)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-resetInputContext"><strong>resetInputContext</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-resetInputContext">resetInputContext</a>()</tt></dd></dl>
+
+<dl><dt><a name="GitLog-resize"><strong>resize</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-resize">resize</a>(QSize)<br>
+QWidget.<a href="#GitLog-resize">resize</a>(int,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-resizeEvent"><strong>resizeEvent</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-resizeEvent">resizeEvent</a>(QResizeEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-restoreGeometry"><strong>restoreGeometry</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-restoreGeometry">restoreGeometry</a>(QByteArray)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-saveGeometry"><strong>saveGeometry</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-saveGeometry">saveGeometry</a>()&nbsp;-&gt;&nbsp;QByteArray</tt></dd></dl>
+
+<dl><dt><a name="GitLog-scroll"><strong>scroll</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-scroll">scroll</a>(int,&nbsp;int)<br>
+QWidget.<a href="#GitLog-scroll">scroll</a>(int,&nbsp;int,&nbsp;QRect)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setAcceptDrops"><strong>setAcceptDrops</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setAcceptDrops">setAcceptDrops</a>(bool)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setAccessibleDescription"><strong>setAccessibleDescription</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setAccessibleDescription">setAccessibleDescription</a>(QString)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setAccessibleName"><strong>setAccessibleName</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setAccessibleName">setAccessibleName</a>(QString)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setAttribute"><strong>setAttribute</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setAttribute">setAttribute</a>(Qt.WidgetAttribute,&nbsp;bool&nbsp;on=True)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setAutoFillBackground"><strong>setAutoFillBackground</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setAutoFillBackground">setAutoFillBackground</a>(bool)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setBackgroundRole"><strong>setBackgroundRole</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setBackgroundRole">setBackgroundRole</a>(QPalette.ColorRole)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setBaseSize"><strong>setBaseSize</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setBaseSize">setBaseSize</a>(int,&nbsp;int)<br>
+QWidget.<a href="#GitLog-setBaseSize">setBaseSize</a>(QSize)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setContentsMargins"><strong>setContentsMargins</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setContentsMargins">setContentsMargins</a>(int,&nbsp;int,&nbsp;int,&nbsp;int)<br>
+QWidget.<a href="#GitLog-setContentsMargins">setContentsMargins</a>(QMargins)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setContextMenuPolicy"><strong>setContextMenuPolicy</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setContextMenuPolicy">setContextMenuPolicy</a>(Qt.ContextMenuPolicy)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setCursor"><strong>setCursor</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setCursor">setCursor</a>(QCursor)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setDisabled"><strong>setDisabled</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setDisabled">setDisabled</a>(bool)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setEnabled"><strong>setEnabled</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setEnabled">setEnabled</a>(bool)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setFixedHeight"><strong>setFixedHeight</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setFixedHeight">setFixedHeight</a>(int)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setFixedSize"><strong>setFixedSize</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setFixedSize">setFixedSize</a>(QSize)<br>
+QWidget.<a href="#GitLog-setFixedSize">setFixedSize</a>(int,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setFixedWidth"><strong>setFixedWidth</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setFixedWidth">setFixedWidth</a>(int)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setFocus"><strong>setFocus</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setFocus">setFocus</a>()<br>
+QWidget.<a href="#GitLog-setFocus">setFocus</a>(Qt.FocusReason)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setFocusPolicy"><strong>setFocusPolicy</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setFocusPolicy">setFocusPolicy</a>(Qt.FocusPolicy)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setFocusProxy"><strong>setFocusProxy</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setFocusProxy">setFocusProxy</a>(QWidget)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setFont"><strong>setFont</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setFont">setFont</a>(QFont)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setForegroundRole"><strong>setForegroundRole</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setForegroundRole">setForegroundRole</a>(QPalette.ColorRole)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setGeometry"><strong>setGeometry</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setGeometry">setGeometry</a>(QRect)<br>
+QWidget.<a href="#GitLog-setGeometry">setGeometry</a>(int,&nbsp;int,&nbsp;int,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setGraphicsEffect"><strong>setGraphicsEffect</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setGraphicsEffect">setGraphicsEffect</a>(QGraphicsEffect)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setHidden"><strong>setHidden</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setHidden">setHidden</a>(bool)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setInputContext"><strong>setInputContext</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setInputContext">setInputContext</a>(QInputContext)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setInputMethodHints"><strong>setInputMethodHints</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setInputMethodHints">setInputMethodHints</a>(Qt.InputMethodHints)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setLayout"><strong>setLayout</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setLayout">setLayout</a>(QLayout)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setLayoutDirection"><strong>setLayoutDirection</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setLayoutDirection">setLayoutDirection</a>(Qt.LayoutDirection)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setLocale"><strong>setLocale</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setLocale">setLocale</a>(QLocale)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setMask"><strong>setMask</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setMask">setMask</a>(QBitmap)<br>
+QWidget.<a href="#GitLog-setMask">setMask</a>(QRegion)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setMaximumHeight"><strong>setMaximumHeight</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setMaximumHeight">setMaximumHeight</a>(int)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setMaximumSize"><strong>setMaximumSize</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setMaximumSize">setMaximumSize</a>(int,&nbsp;int)<br>
+QWidget.<a href="#GitLog-setMaximumSize">setMaximumSize</a>(QSize)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setMaximumWidth"><strong>setMaximumWidth</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setMaximumWidth">setMaximumWidth</a>(int)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setMinimumHeight"><strong>setMinimumHeight</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setMinimumHeight">setMinimumHeight</a>(int)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setMinimumSize"><strong>setMinimumSize</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setMinimumSize">setMinimumSize</a>(int,&nbsp;int)<br>
+QWidget.<a href="#GitLog-setMinimumSize">setMinimumSize</a>(QSize)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setMinimumWidth"><strong>setMinimumWidth</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setMinimumWidth">setMinimumWidth</a>(int)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setMouseTracking"><strong>setMouseTracking</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setMouseTracking">setMouseTracking</a>(bool)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setPalette"><strong>setPalette</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setPalette">setPalette</a>(QPalette)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setParent"><strong>setParent</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setParent">setParent</a>(QWidget)<br>
+QWidget.<a href="#GitLog-setParent">setParent</a>(QWidget,&nbsp;Qt.WindowFlags)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setShortcutAutoRepeat"><strong>setShortcutAutoRepeat</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setShortcutAutoRepeat">setShortcutAutoRepeat</a>(int,&nbsp;bool&nbsp;enabled=True)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setShortcutEnabled"><strong>setShortcutEnabled</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setShortcutEnabled">setShortcutEnabled</a>(int,&nbsp;bool&nbsp;enabled=True)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setShown"><strong>setShown</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setShown">setShown</a>(bool)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setSizeIncrement"><strong>setSizeIncrement</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setSizeIncrement">setSizeIncrement</a>(int,&nbsp;int)<br>
+QWidget.<a href="#GitLog-setSizeIncrement">setSizeIncrement</a>(QSize)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setSizePolicy"><strong>setSizePolicy</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setSizePolicy">setSizePolicy</a>(QSizePolicy)<br>
+QWidget.<a href="#GitLog-setSizePolicy">setSizePolicy</a>(QSizePolicy.Policy,&nbsp;QSizePolicy.Policy)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setStatusTip"><strong>setStatusTip</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setStatusTip">setStatusTip</a>(QString)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setStyle"><strong>setStyle</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setStyle">setStyle</a>(QStyle)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setStyleSheet"><strong>setStyleSheet</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setStyleSheet">setStyleSheet</a>(QString)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setTabOrder"><strong>setTabOrder</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setTabOrder">setTabOrder</a>(QWidget,&nbsp;QWidget)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setToolTip"><strong>setToolTip</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setToolTip">setToolTip</a>(QString)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setUpdatesEnabled"><strong>setUpdatesEnabled</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setUpdatesEnabled">setUpdatesEnabled</a>(bool)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setVisible"><strong>setVisible</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setVisible">setVisible</a>(bool)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setWhatsThis"><strong>setWhatsThis</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setWhatsThis">setWhatsThis</a>(QString)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setWindowFilePath"><strong>setWindowFilePath</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setWindowFilePath">setWindowFilePath</a>(QString)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setWindowFlags"><strong>setWindowFlags</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setWindowFlags">setWindowFlags</a>(Qt.WindowFlags)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setWindowIcon"><strong>setWindowIcon</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setWindowIcon">setWindowIcon</a>(QIcon)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setWindowIconText"><strong>setWindowIconText</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setWindowIconText">setWindowIconText</a>(QString)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setWindowModality"><strong>setWindowModality</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setWindowModality">setWindowModality</a>(Qt.WindowModality)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setWindowModified"><strong>setWindowModified</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setWindowModified">setWindowModified</a>(bool)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setWindowOpacity"><strong>setWindowOpacity</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setWindowOpacity">setWindowOpacity</a>(float)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setWindowRole"><strong>setWindowRole</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setWindowRole">setWindowRole</a>(QString)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setWindowState"><strong>setWindowState</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setWindowState">setWindowState</a>(Qt.WindowStates)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setWindowTitle"><strong>setWindowTitle</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-setWindowTitle">setWindowTitle</a>(QString)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-show"><strong>show</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-show">show</a>()</tt></dd></dl>
+
+<dl><dt><a name="GitLog-showEvent"><strong>showEvent</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-showEvent">showEvent</a>(QShowEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-showFullScreen"><strong>showFullScreen</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-showFullScreen">showFullScreen</a>()</tt></dd></dl>
+
+<dl><dt><a name="GitLog-showMaximized"><strong>showMaximized</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-showMaximized">showMaximized</a>()</tt></dd></dl>
+
+<dl><dt><a name="GitLog-showMinimized"><strong>showMinimized</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-showMinimized">showMinimized</a>()</tt></dd></dl>
+
+<dl><dt><a name="GitLog-showNormal"><strong>showNormal</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-showNormal">showNormal</a>()</tt></dd></dl>
+
+<dl><dt><a name="GitLog-size"><strong>size</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-size">size</a>()&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="GitLog-sizeHint"><strong>sizeHint</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-sizeHint">sizeHint</a>()&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="GitLog-sizeIncrement"><strong>sizeIncrement</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-sizeIncrement">sizeIncrement</a>()&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="GitLog-sizePolicy"><strong>sizePolicy</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-sizePolicy">sizePolicy</a>()&nbsp;-&gt;&nbsp;QSizePolicy</tt></dd></dl>
+
+<dl><dt><a name="GitLog-stackUnder"><strong>stackUnder</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-stackUnder">stackUnder</a>(QWidget)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-statusTip"><strong>statusTip</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-statusTip">statusTip</a>()&nbsp;-&gt;&nbsp;QString</tt></dd></dl>
+
+<dl><dt><a name="GitLog-style"><strong>style</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-style">style</a>()&nbsp;-&gt;&nbsp;QStyle</tt></dd></dl>
+
+<dl><dt><a name="GitLog-styleSheet"><strong>styleSheet</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-styleSheet">styleSheet</a>()&nbsp;-&gt;&nbsp;QString</tt></dd></dl>
+
+<dl><dt><a name="GitLog-tabletEvent"><strong>tabletEvent</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-tabletEvent">tabletEvent</a>(QTabletEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-testAttribute"><strong>testAttribute</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-testAttribute">testAttribute</a>(Qt.WidgetAttribute)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-toolTip"><strong>toolTip</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-toolTip">toolTip</a>()&nbsp;-&gt;&nbsp;QString</tt></dd></dl>
+
+<dl><dt><a name="GitLog-topLevelWidget"><strong>topLevelWidget</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-topLevelWidget">topLevelWidget</a>()&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="GitLog-underMouse"><strong>underMouse</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-underMouse">underMouse</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-ungrabGesture"><strong>ungrabGesture</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-ungrabGesture">ungrabGesture</a>(Qt.GestureType)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-unsetCursor"><strong>unsetCursor</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-unsetCursor">unsetCursor</a>()</tt></dd></dl>
+
+<dl><dt><a name="GitLog-unsetLayoutDirection"><strong>unsetLayoutDirection</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-unsetLayoutDirection">unsetLayoutDirection</a>()</tt></dd></dl>
+
+<dl><dt><a name="GitLog-unsetLocale"><strong>unsetLocale</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-unsetLocale">unsetLocale</a>()</tt></dd></dl>
+
+<dl><dt><a name="GitLog-update"><strong>update</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-update">update</a>()<br>
+QWidget.<a href="#GitLog-update">update</a>(QRect)<br>
+QWidget.<a href="#GitLog-update">update</a>(QRegion)<br>
+QWidget.<a href="#GitLog-update">update</a>(int,&nbsp;int,&nbsp;int,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-updateGeometry"><strong>updateGeometry</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-updateGeometry">updateGeometry</a>()</tt></dd></dl>
+
+<dl><dt><a name="GitLog-updateMicroFocus"><strong>updateMicroFocus</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-updateMicroFocus">updateMicroFocus</a>()</tt></dd></dl>
+
+<dl><dt><a name="GitLog-updatesEnabled"><strong>updatesEnabled</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-updatesEnabled">updatesEnabled</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-visibleRegion"><strong>visibleRegion</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-visibleRegion">visibleRegion</a>()&nbsp;-&gt;&nbsp;QRegion</tt></dd></dl>
+
+<dl><dt><a name="GitLog-whatsThis"><strong>whatsThis</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-whatsThis">whatsThis</a>()&nbsp;-&gt;&nbsp;QString</tt></dd></dl>
+
+<dl><dt><a name="GitLog-wheelEvent"><strong>wheelEvent</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-wheelEvent">wheelEvent</a>(QWheelEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-width"><strong>width</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-width">width</a>()&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="GitLog-winId"><strong>winId</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-winId">winId</a>()&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="GitLog-window"><strong>window</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-window">window</a>()&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="GitLog-windowActivationChange"><strong>windowActivationChange</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-windowActivationChange">windowActivationChange</a>(bool)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-windowFilePath"><strong>windowFilePath</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-windowFilePath">windowFilePath</a>()&nbsp;-&gt;&nbsp;QString</tt></dd></dl>
+
+<dl><dt><a name="GitLog-windowFlags"><strong>windowFlags</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-windowFlags">windowFlags</a>()&nbsp;-&gt;&nbsp;Qt.WindowFlags</tt></dd></dl>
+
+<dl><dt><a name="GitLog-windowIcon"><strong>windowIcon</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-windowIcon">windowIcon</a>()&nbsp;-&gt;&nbsp;QIcon</tt></dd></dl>
+
+<dl><dt><a name="GitLog-windowIconText"><strong>windowIconText</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-windowIconText">windowIconText</a>()&nbsp;-&gt;&nbsp;QString</tt></dd></dl>
+
+<dl><dt><a name="GitLog-windowModality"><strong>windowModality</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-windowModality">windowModality</a>()&nbsp;-&gt;&nbsp;Qt.WindowModality</tt></dd></dl>
+
+<dl><dt><a name="GitLog-windowOpacity"><strong>windowOpacity</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-windowOpacity">windowOpacity</a>()&nbsp;-&gt;&nbsp;float</tt></dd></dl>
+
+<dl><dt><a name="GitLog-windowRole"><strong>windowRole</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-windowRole">windowRole</a>()&nbsp;-&gt;&nbsp;QString</tt></dd></dl>
+
+<dl><dt><a name="GitLog-windowState"><strong>windowState</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-windowState">windowState</a>()&nbsp;-&gt;&nbsp;Qt.WindowStates</tt></dd></dl>
+
+<dl><dt><a name="GitLog-windowTitle"><strong>windowTitle</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-windowTitle">windowTitle</a>()&nbsp;-&gt;&nbsp;QString</tt></dd></dl>
+
+<dl><dt><a name="GitLog-windowType"><strong>windowType</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-windowType">windowType</a>()&nbsp;-&gt;&nbsp;Qt.WindowType</tt></dd></dl>
+
+<dl><dt><a name="GitLog-x"><strong>x</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-x">x</a>()&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="GitLog-y"><strong>y</strong></a>(...)</dt><dd><tt>QWidget.<a href="#GitLog-y">y</a>()&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="PyQt4.QtGui.html#QWidget">PyQt4.QtGui.QWidget</a>:<br>
+<dl><dt><strong>DrawChildren</strong> = 2</dl>
+
+<dl><dt><strong>DrawWindowBackground</strong> = 1</dl>
+
+<dl><dt><strong>IgnoreMask</strong> = 4</dl>
+
+<dl><dt><strong>RenderFlag</strong> = &lt;class 'PyQt4.QtGui.RenderFlag'&gt;</dl>
+
+<dl><dt><strong>RenderFlags</strong> = &lt;class 'PyQt4.QtGui.RenderFlags'&gt;<dd><tt>QWidget.<a href="#GitLog-RenderFlags">RenderFlags</a>(QWidget.RenderFlags)<br>
+QWidget.<a href="#GitLog-RenderFlags">RenderFlags</a>(int)<br>
+QWidget.<a href="#GitLog-RenderFlags">RenderFlags</a>()</tt></dl>
+
+<hr>
+Methods inherited from <a href="PyQt4.QtCore.html#QObject">PyQt4.QtCore.QObject</a>:<br>
+<dl><dt><a name="GitLog-__getattr__"><strong>__getattr__</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-__getattr__">__getattr__</a>(str)&nbsp;-&gt;&nbsp;object</tt></dd></dl>
+
+<dl><dt><a name="GitLog-blockSignals"><strong>blockSignals</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-blockSignals">blockSignals</a>(bool)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-childEvent"><strong>childEvent</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-childEvent">childEvent</a>(QChildEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-children"><strong>children</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-children">children</a>()&nbsp;-&gt;&nbsp;list-of-QObject</tt></dd></dl>
+
+<dl><dt><a name="GitLog-connect"><strong>connect</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-connect">connect</a>(QObject,&nbsp;<a href="#-SIGNAL">SIGNAL</a>(),&nbsp;QObject,&nbsp;<a href="#-SLOT">SLOT</a>(),&nbsp;Qt.ConnectionType=Qt.AutoConnection)&nbsp;-&gt;&nbsp;bool<br>
+QObject.<a href="#GitLog-connect">connect</a>(QObject,&nbsp;<a href="#-SIGNAL">SIGNAL</a>(),&nbsp;callable,&nbsp;Qt.ConnectionType=Qt.AutoConnection)&nbsp;-&gt;&nbsp;bool<br>
+QObject.<a href="#GitLog-connect">connect</a>(QObject,&nbsp;<a href="#-SIGNAL">SIGNAL</a>(),&nbsp;<a href="#-SLOT">SLOT</a>(),&nbsp;Qt.ConnectionType=Qt.AutoConnection)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-connectNotify"><strong>connectNotify</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-connectNotify">connectNotify</a>(<a href="#-SIGNAL">SIGNAL</a>())</tt></dd></dl>
+
+<dl><dt><a name="GitLog-customEvent"><strong>customEvent</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-customEvent">customEvent</a>(QEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-deleteLater"><strong>deleteLater</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-deleteLater">deleteLater</a>()</tt></dd></dl>
+
+<strong>destroyed</strong> = &lt;unbound signal destroyed&gt;
+<dl><dt><a name="GitLog-disconnect"><strong>disconnect</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-disconnect">disconnect</a>(QObject,&nbsp;<a href="#-SIGNAL">SIGNAL</a>(),&nbsp;QObject,&nbsp;<a href="#-SLOT">SLOT</a>())&nbsp;-&gt;&nbsp;bool<br>
+QObject.<a href="#GitLog-disconnect">disconnect</a>(QObject,&nbsp;<a href="#-SIGNAL">SIGNAL</a>(),&nbsp;callable)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-disconnectNotify"><strong>disconnectNotify</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-disconnectNotify">disconnectNotify</a>(<a href="#-SIGNAL">SIGNAL</a>())</tt></dd></dl>
+
+<dl><dt><a name="GitLog-dumpObjectInfo"><strong>dumpObjectInfo</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-dumpObjectInfo">dumpObjectInfo</a>()</tt></dd></dl>
+
+<dl><dt><a name="GitLog-dumpObjectTree"><strong>dumpObjectTree</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-dumpObjectTree">dumpObjectTree</a>()</tt></dd></dl>
+
+<dl><dt><a name="GitLog-dynamicPropertyNames"><strong>dynamicPropertyNames</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-dynamicPropertyNames">dynamicPropertyNames</a>()&nbsp;-&gt;&nbsp;list-of-QByteArray</tt></dd></dl>
+
+<dl><dt><a name="GitLog-emit"><strong>emit</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-emit">emit</a>(<a href="#-SIGNAL">SIGNAL</a>(),&nbsp;...)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-eventFilter"><strong>eventFilter</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-eventFilter">eventFilter</a>(QObject,&nbsp;QEvent)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-findChild"><strong>findChild</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-findChild">findChild</a>(type,&nbsp;QString&nbsp;name=QString())&nbsp;-&gt;&nbsp;QObject<br>
+QObject.<a href="#GitLog-findChild">findChild</a>(tuple,&nbsp;QString&nbsp;name=QString())&nbsp;-&gt;&nbsp;QObject</tt></dd></dl>
+
+<dl><dt><a name="GitLog-findChildren"><strong>findChildren</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-findChildren">findChildren</a>(type,&nbsp;QString&nbsp;name=QString())&nbsp;-&gt;&nbsp;list-of-QObject<br>
+QObject.<a href="#GitLog-findChildren">findChildren</a>(tuple,&nbsp;QString&nbsp;name=QString())&nbsp;-&gt;&nbsp;list-of-QObject<br>
+QObject.<a href="#GitLog-findChildren">findChildren</a>(type,&nbsp;QRegExp)&nbsp;-&gt;&nbsp;list-of-QObject<br>
+QObject.<a href="#GitLog-findChildren">findChildren</a>(tuple,&nbsp;QRegExp)&nbsp;-&gt;&nbsp;list-of-QObject</tt></dd></dl>
+
+<dl><dt><a name="GitLog-inherits"><strong>inherits</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-inherits">inherits</a>(str)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-installEventFilter"><strong>installEventFilter</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-installEventFilter">installEventFilter</a>(QObject)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-isWidgetType"><strong>isWidgetType</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-isWidgetType">isWidgetType</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-killTimer"><strong>killTimer</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-killTimer">killTimer</a>(int)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-metaObject"><strong>metaObject</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-metaObject">metaObject</a>()&nbsp;-&gt;&nbsp;QMetaObject</tt></dd></dl>
+
+<dl><dt><a name="GitLog-moveToThread"><strong>moveToThread</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-moveToThread">moveToThread</a>(QThread)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-objectName"><strong>objectName</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-objectName">objectName</a>()&nbsp;-&gt;&nbsp;QString</tt></dd></dl>
+
+<dl><dt><a name="GitLog-parent"><strong>parent</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-parent">parent</a>()&nbsp;-&gt;&nbsp;QObject</tt></dd></dl>
+
+<dl><dt><a name="GitLog-property"><strong>property</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-property">property</a>(str)&nbsp;-&gt;&nbsp;QVariant</tt></dd></dl>
+
+<dl><dt><a name="GitLog-pyqtConfigure"><strong>pyqtConfigure</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-pyqtConfigure">pyqtConfigure</a>(...)<br>
+&nbsp;<br>
+Each&nbsp;keyword&nbsp;argument&nbsp;is&nbsp;either&nbsp;the&nbsp;name&nbsp;of&nbsp;a&nbsp;Qt&nbsp;property&nbsp;or&nbsp;a&nbsp;Qt&nbsp;signal.<br>
+For&nbsp;properties&nbsp;the&nbsp;property&nbsp;is&nbsp;set&nbsp;to&nbsp;the&nbsp;given&nbsp;value&nbsp;which&nbsp;should&nbsp;be&nbsp;of&nbsp;an<br>
+appropriate&nbsp;type.<br>
+For&nbsp;signals&nbsp;the&nbsp;signal&nbsp;is&nbsp;connected&nbsp;to&nbsp;the&nbsp;given&nbsp;value&nbsp;which&nbsp;should&nbsp;be&nbsp;a<br>
+callable.</tt></dd></dl>
+
+<dl><dt><a name="GitLog-receivers"><strong>receivers</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-receivers">receivers</a>(<a href="#-SIGNAL">SIGNAL</a>())&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="GitLog-removeEventFilter"><strong>removeEventFilter</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-removeEventFilter">removeEventFilter</a>(QObject)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-sender"><strong>sender</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-sender">sender</a>()&nbsp;-&gt;&nbsp;QObject</tt></dd></dl>
+
+<dl><dt><a name="GitLog-senderSignalIndex"><strong>senderSignalIndex</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-senderSignalIndex">senderSignalIndex</a>()&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setObjectName"><strong>setObjectName</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-setObjectName">setObjectName</a>(QString)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-setProperty"><strong>setProperty</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-setProperty">setProperty</a>(str,&nbsp;QVariant)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-signalsBlocked"><strong>signalsBlocked</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-signalsBlocked">signalsBlocked</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-startTimer"><strong>startTimer</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-startTimer">startTimer</a>(int)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="GitLog-thread"><strong>thread</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-thread">thread</a>()&nbsp;-&gt;&nbsp;QThread</tt></dd></dl>
+
+<dl><dt><a name="GitLog-timerEvent"><strong>timerEvent</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-timerEvent">timerEvent</a>(QTimerEvent)</tt></dd></dl>
+
+<dl><dt><a name="GitLog-tr"><strong>tr</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-tr">tr</a>(str,&nbsp;str&nbsp;disambiguation=None,&nbsp;int&nbsp;n=-1)&nbsp;-&gt;&nbsp;QString</tt></dd></dl>
+
+<dl><dt><a name="GitLog-trUtf8"><strong>trUtf8</strong></a>(...)</dt><dd><tt>QObject.<a href="#GitLog-trUtf8">trUtf8</a>(str,&nbsp;str&nbsp;disambiguation=None,&nbsp;int&nbsp;n=-1)&nbsp;-&gt;&nbsp;QString</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="PyQt4.QtCore.html#QObject">PyQt4.QtCore.QObject</a>:<br>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>staticMetaObject</strong></dt>
+</dl>
+<hr>
+Methods inherited from <a href="PyQt4.QtGui.html#QPaintDevice">PyQt4.QtGui.QPaintDevice</a>:<br>
+<dl><dt><a name="GitLog-colorCount"><strong>colorCount</strong></a>(...)</dt><dd><tt>QPaintDevice.<a href="#GitLog-colorCount">colorCount</a>()&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="GitLog-depth"><strong>depth</strong></a>(...)</dt><dd><tt>QPaintDevice.<a href="#GitLog-depth">depth</a>()&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="GitLog-heightMM"><strong>heightMM</strong></a>(...)</dt><dd><tt>QPaintDevice.<a href="#GitLog-heightMM">heightMM</a>()&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="GitLog-logicalDpiX"><strong>logicalDpiX</strong></a>(...)</dt><dd><tt>QPaintDevice.<a href="#GitLog-logicalDpiX">logicalDpiX</a>()&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="GitLog-logicalDpiY"><strong>logicalDpiY</strong></a>(...)</dt><dd><tt>QPaintDevice.<a href="#GitLog-logicalDpiY">logicalDpiY</a>()&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="GitLog-numColors"><strong>numColors</strong></a>(...)</dt><dd><tt>QPaintDevice.<a href="#GitLog-numColors">numColors</a>()&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="GitLog-paintingActive"><strong>paintingActive</strong></a>(...)</dt><dd><tt>QPaintDevice.<a href="#GitLog-paintingActive">paintingActive</a>()&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="GitLog-physicalDpiX"><strong>physicalDpiX</strong></a>(...)</dt><dd><tt>QPaintDevice.<a href="#GitLog-physicalDpiX">physicalDpiX</a>()&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="GitLog-physicalDpiY"><strong>physicalDpiY</strong></a>(...)</dt><dd><tt>QPaintDevice.<a href="#GitLog-physicalDpiY">physicalDpiY</a>()&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="GitLog-widthMM"><strong>widthMM</strong></a>(...)</dt><dd><tt>QPaintDevice.<a href="#GitLog-widthMM">widthMM</a>()&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="PyQt4.QtGui.html#QPaintDevice">PyQt4.QtGui.QPaintDevice</a>:<br>
+<dl><dt><strong>PaintDeviceMetric</strong> = &lt;class 'PyQt4.QtGui.PaintDeviceMetric'&gt;</dl>
+
+<dl><dt><strong>PdmDepth</strong> = 6</dl>
+
+<dl><dt><strong>PdmDpiX</strong> = 7</dl>
+
+<dl><dt><strong>PdmDpiY</strong> = 8</dl>
+
+<dl><dt><strong>PdmHeight</strong> = 2</dl>
+
+<dl><dt><strong>PdmHeightMM</strong> = 4</dl>
+
+<dl><dt><strong>PdmNumColors</strong> = 5</dl>
+
+<dl><dt><strong>PdmPhysicalDpiX</strong> = 9</dl>
+
+<dl><dt><strong>PdmPhysicalDpiY</strong> = 10</dl>
+
+<dl><dt><strong>PdmWidth</strong> = 1</dl>
+
+<dl><dt><strong>PdmWidthMM</strong> = 3</dl>
+
+<hr>
+Data descriptors inherited from <a href="sip.html#simplewrapper">sip.simplewrapper</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="sip.html#simplewrapper">sip.simplewrapper</a>:<br>
+<dl><dt><strong>__new__</strong> = &lt;built-in method __new__ of sip.wrappertype object&gt;<dd><tt>T.<a href="#GitLog-__new__">__new__</a>(S,&nbsp;...)&nbsp;-&gt;&nbsp;a&nbsp;new&nbsp;object&nbsp;with&nbsp;type&nbsp;S,&nbsp;a&nbsp;subtype&nbsp;of&nbsp;T</tt></dl>
+
+<hr>
+Methods inherited from <a href="git_log_ui.html#Ui_MainWindow">git_log_ui.Ui_MainWindow</a>:<br>
+<dl><dt><a name="GitLog-retranslateUi"><strong>retranslateUi</strong></a>(self, MainWindow)</dt></dl>
+
+<dl><dt><a name="GitLog-setupUi"><strong>setupUi</strong></a>(self, MainWindow)</dt></dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-SIGNAL"><strong>SIGNAL</strong></a>(...)</dt><dd><tt><a href="#-SIGNAL">SIGNAL</a>(str)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+ <dl><dt><a name="-SLOT"><strong>SLOT</strong></a>(...)</dt><dd><tt><a href="#-SLOT">SLOT</a>(str)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+ <dl><dt><a name="-main"><strong>main</strong></a>()</dt></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>__author__</strong> = 'Karthik Ashok Arjunagi'</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#7799ee">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Author</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#7799ee"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Karthik&nbsp;Ashok&nbsp;Arjunagi</td></tr></table>
+</body></html>

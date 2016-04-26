@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>667</width>
+    <height>531</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GitLog</string>
+  </property>
+  <property name="whatsThis">
+   <string/>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QComboBox" name="fileOrDirectory">
+      <property name="toolTip">
+       <string>Select the file or folder for which the history has to be found</string>
+      </property>
+      <property name="statusTip">
+       <string>Select the required file or folder</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="pathDisplay">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Path of selected file/folder will be displayed here.</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QComboBox" name="timeLine">
+      <property name="toolTip">
+       <string>Select the time duration for which the history has to be displayed.</string>
+      </property>
+      <property name="statusTip">
+       <string>Select the timeline</string>
+      </property>
+      <property name="whatsThis">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="revisions">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Seach using SHA revisions (short(atleast first 4 characters) or full form).</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <widget class="QTreeWidget" name="commentTree">
+      <property name="maximumSize">
+       <size>
+        <width>643</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="toolTip">
+       <string>Tree widget to dipaly the history.</string>
+      </property>
+      <property name="statusTip">
+       <string>Tree widget to dipaly the history</string>
+      </property>
+      <column>
+       <property name="text">
+        <string notr="true">1</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="2" alignment="Qt::AlignVCenter">
+     <widget class="QPlainTextEdit" name="errorBox">
+      <property name="toolTip">
+       <string>Errors will be displayed here.</string>
+      </property>
+      <property name="statusTip">
+       <string>Error Box</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="documentTitle">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QPushButton" name="quitButton">
+      <property name="text">
+       <string>Quit</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0" alignment="Qt::AlignHCenter">
+     <widget class="QPushButton" name="resetButton">
+      <property name="toolTip">
+       <string>Resets all the fields to their original values.</string>
+      </property>
+      <property name="statusTip">
+       <string>Reset the fields</string>
+      </property>
+      <property name="text">
+       <string>Reset All Fields</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionControl_q">
+   <property name="text">
+    <string>control+q</string>
+   </property>
+  </action>
+  <action name="quitFromMenu">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="statusTip">
+    <string>Quit the application</string>
+   </property>
+   <property name="shortcut">
+    <string>Meta+Q</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
