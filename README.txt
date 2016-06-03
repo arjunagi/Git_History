@@ -1,11 +1,10 @@
 An application for browsing git commit history, using the following as a reference guide:
    http://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
    
-The application has the following facilties:
+The application has the following facilities:
  UI to navigate to a directory
  A tree to load each comment as a treeview or treewidget item
- Allow for some searching capabilities (for instance, I should be able to type “2 weeks
-ago” in the search) or specifying the revision(s) to lookup
+ Allow for some searching capabilities based on time period or revisions.
 
 
 Files in the application:
