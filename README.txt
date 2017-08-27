@@ -1,3 +1,12 @@
+An application for browsing git commit history, using the following as a reference guide:
+   http://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
+   
+The application has the following facilities:
+ UI to navigate to a directory
+ A tree to load each comment as a treeview or treewidget item
+ Allow for some searching capabilities based on time period or revisions.
+
+
 Files in the application:
 -------------------------
 git_log_ui.ui - The .ui file generated as the output of Qt Designer
