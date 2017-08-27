@@ -1,24 +1,28 @@
-An application for browsing git commit history, using the following as a reference guide:
-   http://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
+An application for browsing git commit history, using this as a reference guide: http://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
+   
+UI created using PyQt.
    
 The application has the following facilities:
- UI to navigate to a directory
- A tree to load each comment as a treeview or treewidget item
- Allow for some searching capabilities based on time period or revisions.
+* UI to navigate to a directory
+* A tree to load each comment as a treeview or treewidget item
+* Allow for some searching capabilities based on time period or revisions.
+
+![Alt test](https://github.com/arjunagi/Git_History/blob/master/app.png)
 
 
 Files in the application:
 -------------------------
-git_log_ui.ui - The .ui file generated as the output of Qt Designer
-git_log_ui.py - The ui file converted to python
-git_log.py    - The file with the main implementation. This inherits the ui file.
+* git_log_ui.ui - The .ui file generated as the output of Qt Designer
+* git_log_ui.py - The ui file converted to python
+* git_log.py    - The file with the main implementation. This inherits the ui file.
   
 How to run the application:
 ---------------------------
 Make sure all the above files are in the same directory and Pyqt4 is installed.
 The application can be run using the command:
-
-		python git_log.py
+```
+python git_log.py
+```
 
 Application Layout:
 -------------------
@@ -36,10 +40,8 @@ The application containst the following fields/widgets. You can hover the mouse 
 How to use the application:
 ---------------------------
 1. From the drop down menu, select if you want to view the history of a file or a directory. Then, select the desire file/directory. The path of the selected file/directory will be displayed in a text box on the top.
-
-IMPORTANT: 
-- Select files/directory from a git repository. If you select files which are not in a git repo, an error will be shown.
-- The other fields are enabled only after a file/directory is chosen!
+* Select files/directory from a git repository. If you select files which are not in a git repo, an error will be shown.
+* The other fields are enabled only after a file/directory is chosen!
 
 2. You can either select the timeline from the drop down menu or type the revisions(comma separated) in the text box. The search for history will be made for this time line or for these revisions.
 
